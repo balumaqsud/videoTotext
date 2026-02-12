@@ -86,6 +86,9 @@ export default function RoomPage({ params }: PageProps) {
         // Start microphone chunking for transcription
         chunker = startMicChunking(localStream, async (blob, mimeType) => {
           try {
+            // #region agent log
+            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:onChunk',message:'Sending chunk to transcribe',data:{blobSize:blob.size},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+            // #endregion
             const ext = mimeType.startsWith('audio/mp4')
               ? 'm4a'
               : mimeType.startsWith('audio/ogg')
@@ -99,8 +102,14 @@ export default function RoomPage({ params }: PageProps) {
               body: formData,
             });
 
+            // #region agent log
+            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:afterFetch',message:'Transcribe response',data:{ok:response.ok,status:response.status},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+            // #endregion
             if (response.ok) {
               const data = await response.json();
+              // #region agent log
+              fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setCaptions',message:'API result',data:{hasText:!!(data.text&&data.text.trim()),textLen:data.text?.length??0},timestamp:Date.now(),hypothesisId:'H4'})}).catch(()=>{});
+              // #endregion
               if (data.text && data.text.trim()) {
                 setCaptions((prev) => {
                   const newCaptions = [...prev, data.text];
@@ -109,6 +118,9 @@ export default function RoomPage({ params }: PageProps) {
               }
             }
           } catch (err) {
+            // #region agent log
+            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:transcribeCatch',message:'Transcription request failed',data:{err:String(err)},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+            // #endregion
             console.error('Transcription request failed:', err);
           }
         });
