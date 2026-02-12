@@ -19,7 +19,9 @@ export const ClientMsgSchema = z.discriminatedUnion('type', [
   z.object({
     type: z.literal('ice'),
     roomId: z.string(),
-    candidate: z.any(),
+    candidate: z.custom<RTCIceCandidateInit>(
+      (val) => typeof val === 'object' && val !== null && !Array.isArray(val),
+    ),
   }),
   z.object({
     type: z.literal('leave'),
@@ -36,4 +38,4 @@ export type ServerMsg =
   | { type: 'room-full' }
   | { type: 'offer'; sdp: string }
   | { type: 'answer'; sdp: string }
-  | { type: 'ice'; candidate: any };
+  | { type: 'ice'; candidate: RTCIceCandidateInit };

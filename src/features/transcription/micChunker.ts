@@ -10,10 +10,11 @@ export function startMicChunking(
   // Extract only audio tracks
   const audioStream = new MediaStream(stream.getAudioTracks());
 
-  // Detect supported mime type
+  // Detect supported mime type (browser support varies; Safari needs audio/mp4)
   const mimeTypes = [
     'audio/webm;codecs=opus',
     'audio/webm',
+    'audio/mp4',
     'audio/ogg;codecs=opus',
     'audio/ogg',
   ];
@@ -26,12 +27,17 @@ export function startMicChunking(
     }
   }
 
-  if (!mimeType) {
-    console.warn('No supported mime type found, using default');
-    mimeType = 'audio/webm';
+  let recorder: MediaRecorder;
+  try {
+    recorder = mimeType
+      ? new MediaRecorder(audioStream, { mimeType })
+      : new MediaRecorder(audioStream);
+    if (!mimeType) mimeType = recorder.mimeType;
+  } catch {
+    // isTypeSupported can lie (e.g. Safari); fall back to browser default
+    recorder = new MediaRecorder(audioStream);
+    mimeType = recorder.mimeType;
   }
-
-  const recorder = new MediaRecorder(audioStream, { mimeType });
 
   recorder.ondataavailable = (event) => {
     if (event.data.size > 0) {

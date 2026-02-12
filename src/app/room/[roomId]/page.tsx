@@ -86,8 +86,13 @@ export default function RoomPage({ params }: PageProps) {
         // Start microphone chunking for transcription
         chunker = startMicChunking(localStream, async (blob, mimeType) => {
           try {
+            const ext = mimeType.startsWith('audio/mp4')
+              ? 'm4a'
+              : mimeType.startsWith('audio/ogg')
+                ? 'oga'
+                : 'webm';
             const formData = new FormData();
-            formData.append('audio', blob, 'audio.webm');
+            formData.append('audio', blob, `audio.${ext}`);
 
             const response = await fetch('/api/transcribe', {
               method: 'POST',
