@@ -237,68 +237,59 @@ export default function RoomPage({ params }: PageProps) {
   }, [roomId]);
 
   return (
-    <div style={{ padding: '1rem', fontFamily: 'sans-serif' }}>
-      <h1 style={{ marginBottom: '0.5rem' }}>Room: {roomId}</h1>
-      <p style={{ marginBottom: '1rem', color: '#666' }}>Status: {status}</p>
+    <div className="h-screen overflow-hidden flex flex-col px-4 py-3 font-sans bg-gray-900">
+      {/* Header: compact row with room + status pill */}
+      <header className="flex items-center gap-3 shrink-0 mb-2">
+        <h1 className="text-lg font-semibold text-gray-100">Room: {roomId}</h1>
+        <span
+          className="rounded-full px-2.5 py-0.5 text-sm font-medium bg-gray-700 text-gray-300"
+          aria-label="Connection status"
+        >
+          {status}
+        </span>
+      </header>
 
-      <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-        <div>
-          <h3 style={{ marginBottom: '0.5rem' }}>Local Video</h3>
-          <video
-            ref={localVideoRef}
-            autoPlay
-            playsInline
-            style={{
-              width: '400px',
-              height: '300px',
-              backgroundColor: '#000',
-              borderRadius: '4px',
-            }}
-          />
-        </div>
-
-        <div>
-          <h3 style={{ marginBottom: '0.5rem' }}>Remote Video</h3>
-          <video
-            ref={remoteVideoRef}
-            autoPlay
-            playsInline
-            style={{
-              width: '400px',
-              height: '300px',
-              backgroundColor: '#000',
-              borderRadius: '4px',
-            }}
-          />
-        </div>
-      </div>
-
-      <div
-        style={{
-          border: '1px solid #ccc',
-          borderRadius: '4px',
-          padding: '1rem',
-          minHeight: '200px',
-          maxHeight: 'min(480px, 50vh)',
-          overflowY: 'auto',
-          backgroundColor: '#f9f9f9',
-          width: '100%',
-          boxSizing: 'border-box',
-        }}
-      >
-        <h3 style={{ marginTop: 0, marginBottom: '0.5rem' }}>Live Captions</h3>
-        {captions.length === 0 ? (
-          <p style={{ color: '#999', margin: 0 }}>No captions yet...</p>
-        ) : (
-          <div>
-            {captions.map((caption, idx) => (
-              <p key={idx} style={{ margin: '0.25rem 0' }}>
-                {caption}
-              </p>
-            ))}
+      {/* Video block: centered, larger (416×276), dark card style */}
+      <div className="flex justify-center shrink-0 my-2 mb-3">
+        <div className="flex gap-4">
+          <div className="rounded-xl overflow-hidden shadow-lg border border-gray-600 bg-black">
+            <p className="text-sm font-medium text-gray-400 mb-1 px-0.5">Local Video</p>
+            <video
+              ref={localVideoRef}
+              autoPlay
+              playsInline
+              className="w-[416px] h-[276px] object-cover block"
+            />
           </div>
-        )}
+          <div className="rounded-xl overflow-hidden shadow-lg border border-gray-600 bg-black">
+            <p className="text-sm font-medium text-gray-400 mb-1 px-0.5">Remote Video</p>
+            <video
+              ref={remoteVideoRef}
+              autoPlay
+              playsInline
+              className="w-[416px] h-[276px] object-cover block"
+            />
+          </div>
+        </div>
       </div>
+
+      {/* Captions: fixed height (remaining space), scrollable content only */}
+      <section className="flex-1 min-h-0 flex flex-col">
+        <div className="flex-1 min-h-0 overflow-y-auto rounded-xl border border-gray-600 bg-gray-800 p-4 flex flex-col">
+          <h2 className="text-sm font-semibold text-gray-200 mb-2 shrink-0">Live Captions</h2>
+          {captions.length === 0 ? (
+            <p className="text-gray-500 text-sm mt-0">No captions yet...</p>
+          ) : (
+            <div className="space-y-1.5 leading-relaxed">
+              {captions.map((caption, idx) => (
+                <p key={idx} className="text-gray-200 m-0">
+                  {caption}
+                </p>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
     </div>
   );
 }

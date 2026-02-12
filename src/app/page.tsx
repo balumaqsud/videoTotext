@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [roomId, setRoomId] = useState('');
+  const [roomId, setRoomId] = useState("");
   const router = useRouter();
 
   const handleJoin = () => {
@@ -14,36 +14,27 @@ export default function Home() {
   };
 
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1 style={{ marginBottom: '1rem' }}>Video Call App</h1>
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <input
-          type="text"
-          placeholder="Enter room ID"
-          value={roomId}
-          onChange={(e) => setRoomId(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && handleJoin()}
-          style={{
-            padding: '0.5rem',
-            fontSize: '1rem',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-          }}
-        />
-        <button
-          onClick={handleJoin}
-          style={{
-            padding: '0.5rem 1rem',
-            fontSize: '1rem',
-            backgroundColor: '#0070f3',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-          }}
-        >
-          Join Room
-        </button>
+    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-zinc-950 text-zinc-100 font-sans">
+      <div className="p-8 rounded-2xl border border-zinc-800 bg-zinc-900/50 ring-1 ring-zinc-700 space-y-6">
+        <h1 className="text-3xl font-semibold tracking-tight">
+          PromptLab Call
+        </h1>
+        <div className="flex gap-3 items-center">
+          <input
+            type="text"
+            placeholder="Enter room ID"
+            value={roomId}
+            onChange={(e) => setRoomId(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleJoin()}
+            className="bg-zinc-800 border border-zinc-700 rounded-lg px-4 py-3 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+          <button
+            onClick={handleJoin}
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg px-5 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-zinc-900"
+          >
+            Join Room
+          </button>
+        </div>
       </div>
     </div>
   );
