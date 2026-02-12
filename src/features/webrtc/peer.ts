@@ -59,9 +59,14 @@ export function createPeer(config: PeerConfig): Peer {
     },
 
     acceptAnswer: async (sdp: string) => {
+      const state = pc.signalingState;
       // #region agent log
-      fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'peer.ts:acceptAnswer',message:'acceptAnswer called',data:{signalingState:pc.signalingState},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
+      fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'peer.ts:acceptAnswer',message:'acceptAnswer called',data:{signalingState:state},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
       // #endregion
+      if (state !== 'have-local-offer') {
+        console.warn('Ignoring remote answer in signalingState', state);
+        return;
+      }
       await pc.setRemoteDescription({ type: 'answer', sdp });
     },
 

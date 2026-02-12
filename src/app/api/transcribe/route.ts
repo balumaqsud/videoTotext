@@ -8,6 +8,7 @@ import { tmpdir } from 'os';
 import { join } from 'path';
 import { randomUUID } from 'crypto';
 import { env } from '@/lib/env';
+import { isEnglishOnly } from '@/lib/textUtils';
 
 export const runtime = 'nodejs';
 
@@ -99,6 +100,10 @@ export async function POST(request: NextRequest) {
         language: 'en',
       });
       text = directResult.text || '';
+      // #region agent log
+      const promptPhrase = 'Hello. This is a video call';
+      fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:directResult',message:'Raw transcription from API',data:{rawText:text.slice(0,80),rawLen:text.length,startsWithPrompt:text.trim().startsWith(promptPhrase)},timestamp:Date.now(),hypothesisId:'H1',runId:'post-fix'})}).catch(()=>{});
+      // #endregion
     } catch {
       // Direct upload failed (e.g. invalid/fragmented chunk); fall back to ffmpeg conversion.
       try {
@@ -110,17 +115,23 @@ export async function POST(request: NextRequest) {
           language: 'en',
         });
         text = wavResult.text || '';
+        // #region agent log
+        const promptPhraseWav = 'Hello. This is a video call';
+        fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:wavResult',message:'Raw transcription from WAV fallback',data:{rawText:text.slice(0,80),rawLen:text.length,startsWithPrompt:text.trim().startsWith(promptPhraseWav)},timestamp:Date.now(),hypothesisId:'H1',runId:'post-fix'})}).catch(()=>{});
+        // #endregion
       } catch {
         // Both paths failed; return empty so client doesn't get 500 for every bad chunk.
       }
     }
 
-    const transcription = { text };
+    const rawText = text || '';
+    const finalText = isEnglishOnly(rawText) ? rawText : '';
+    const isPromptEcho = rawText.trim().startsWith('Hello. This is a video call');
 
     // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:success',message:'Transcribe success',data:{textLen:(transcription.text||'').length},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});
+    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:success',message:'Transcribe success',data:{textLen:finalText.length,isPromptEcho,finalTextSample:finalText.slice(0,60)},timestamp:Date.now(),hypothesisId:'H2',runId:'post-fix'})}).catch(()=>{});
     // #endregion
-    return NextResponse.json({ text: transcription.text || '' });
+    return NextResponse.json({ text: finalText });
   } catch (error) {
     // #region agent log
     fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:catch',message:'Transcribe error',data:{detail:error instanceof Error ? error.message : String(error)},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});

@@ -5,6 +5,7 @@ import { createSignalingClient } from '@/features/signaling/wsClient';
 import { getLocalStream } from '@/features/webrtc/media';
 import { createPeer } from '@/features/webrtc/peer';
 import { startMicChunking } from '@/features/transcription/micChunker';
+import { isEnglishOnly } from '@/lib/textUtils';
 import { ServerMsg } from '@/server/ws/messages';
 
 interface PageProps {
@@ -21,6 +22,9 @@ export default function RoomPage({ params }: PageProps) {
   const transcribeInFlightRef = useRef(false);
   const pendingChunkRef = useRef<{ blob: Blob; mimeType: string } | null>(null);
   const chunkCountRef = useRef(0);
+  const captionsContainerRef = useRef<HTMLDivElement | null>(null);
+  const shouldAutoScrollRef = useRef(true);
+  const roleRef = useRef<'initiator' | 'responder' | null>(null);
 
   useEffect(() => {
     let signalingClient: ReturnType<typeof createSignalingClient> | null = null;
@@ -74,12 +78,12 @@ export default function RoomPage({ params }: PageProps) {
         setStatus('Joining room...');
         signalingClient.send({ type: 'join', roomId });
 
-        // Start creating offer after a delay (race-friendly MVP approach)
+        // Start creating offer after a delay, but only if we are the initiator.
         setTimeout(async () => {
           // #region agent log
           fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setTimeout',message:'creating and sending offer',data:{},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
           // #endregion
-          if (peer && signalingClient) {
+          if (peer && signalingClient && roleRef.current === 'initiator') {
             try {
               const sdp = await peer.createOffer();
               signalingClient.send({ type: 'offer', roomId, sdp });
@@ -123,9 +127,13 @@ export default function RoomPage({ params }: PageProps) {
             if (response.ok) {
               const data = await response.json();
               // #region agent log
-              fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setCaptions',message:'API result',data:{hasText:!!(data.text&&data.text.trim()),textLen:data.text?.length??0},timestamp:Date.now(),hypothesisId:'T2'})}).catch(()=>{});
+              fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setCaptions',message:'API result',data:{hasText:!!(data.text&&data.text.trim()),textLen:data.text?.length??0,textSample:data.text?.slice(0,60),isPromptLike:(data.text||'').includes('Hello. This is a video call')},timestamp:Date.now(),hypothesisId:'H3',runId:'post-fix'})}).catch(()=>{});
               // #endregion
-              if (data.text && data.text.trim()) {
+              if (
+                data.text &&
+                data.text.trim() &&
+                isEnglishOnly(data.text)
+              ) {
                 setCaptions((prev) => {
                   const newCaptions = [...prev, data.text];
                   return newCaptions.slice(-50); // Keep last 50 lines
@@ -167,6 +175,10 @@ export default function RoomPage({ params }: PageProps) {
       console.log('Server message:', msg.type);
 
       switch (msg.type) {
+        case 'role':
+          roleRef.current = msg.role;
+          setStatus(msg.role === 'initiator' ? 'You are initiator' : 'You are responder');
+          break;
         case 'peer-joined':
           setStatus('Peer joined');
           break;
@@ -236,6 +248,27 @@ export default function RoomPage({ params }: PageProps) {
     };
   }, [roomId]);
 
+  const handleCaptionsScroll = () => {
+    const container = captionsContainerRef.current;
+    if (!container) return;
+
+    const { scrollTop, scrollHeight, clientHeight } = container;
+    const distanceFromBottom = scrollHeight - (scrollTop + clientHeight);
+    const threshold = 40;
+
+    shouldAutoScrollRef.current = distanceFromBottom <= threshold;
+  };
+
+  useEffect(() => {
+    const container = captionsContainerRef.current;
+    if (!container || !shouldAutoScrollRef.current) return;
+
+    container.scrollTo({
+      top: container.scrollHeight,
+      behavior: 'smooth',
+    });
+  }, [captions]);
+
   return (
     <div className="h-screen overflow-hidden flex flex-col px-4 py-3 font-sans bg-zinc-950">
       {/* Header: compact row with room + status pill */}
@@ -275,7 +308,11 @@ export default function RoomPage({ params }: PageProps) {
 
       {/* Captions: fixed height (remaining space), scrollable content only */}
       <section className="flex-1 min-h-0 flex flex-col">
-        <div className="flex-1 min-h-0 overflow-y-auto rounded-xl border border-zinc-700 bg-zinc-800 p-4 flex flex-col">
+        <div
+          ref={captionsContainerRef}
+          onScroll={handleCaptionsScroll}
+          className="flex-1 min-h-0 overflow-y-auto rounded-xl border border-zinc-700 bg-zinc-800 p-4 flex flex-col"
+        >
           <h2 className="text-sm font-semibold text-zinc-200 mb-2 shrink-0">Live Captions</h2>
           {captions.length === 0 ? (
             <p className="text-zinc-500 text-sm mt-0">No captions yet...</p>

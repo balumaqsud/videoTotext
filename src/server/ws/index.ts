@@ -27,6 +27,25 @@ wss.on('connection', (ws: WebSocket) => {
             return;
           }
 
+          // Assign roles: first connection in a room is initiator (role 'a'),
+          // second is responder (role 'b').
+          if (result.role) {
+            const selfRole: ServerMsg = {
+              type: 'role',
+              role: result.role === 'a' ? 'initiator' : 'responder',
+            };
+            ws.send(JSON.stringify(selfRole));
+
+            const peer = getPeer(msg.roomId, ws);
+            if (peer && peer.readyState === WebSocket.OPEN) {
+              const peerRole: ServerMsg = {
+                type: 'role',
+                role: result.role === 'a' ? 'responder' : 'initiator',
+              };
+              peer.send(JSON.stringify(peerRole));
+            }
+          }
+
           // Check if peer already exists
           const peer = getPeer(msg.roomId, ws);
           if (peer && peer.readyState === WebSocket.OPEN) {

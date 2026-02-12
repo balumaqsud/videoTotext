@@ -34,6 +34,7 @@ export type ClientMsg = z.infer<typeof ClientMsgSchema>;
 // Server -> Client messages
 export type ServerMsg =
   | { type: 'peer-joined' }
+  | { type: 'role'; role: 'initiator' | 'responder' }
   | { type: 'peer-left' }
   | { type: 'room-full' }
   | { type: 'offer'; sdp: string }
