@@ -1,12 +1,16 @@
-'use client';
+"use client";
 
-import { use, useEffect, useRef, useState } from 'react';
-import { createSignalingClient } from '@/features/signaling/wsClient';
-import { getLocalStream } from '@/features/webrtc/media';
-import { createPeer } from '@/features/webrtc/peer';
-import { startMicChunking } from '@/features/transcription/micChunker';
-import { isEnglishOnly } from '@/lib/textUtils';
-import { ServerMsg } from '@/server/ws/messages';
+import { use, useEffect, useRef, useState } from "react";
+import { createSignalingClient } from "@/features/signaling/wsClient";
+import { getLocalStream } from "@/features/webrtc/media";
+import { createPeer } from "@/features/webrtc/peer";
+import { startMicChunking } from "@/features/transcription/micChunker";
+import {
+  appendTranscriptionChunk,
+  resetCaptions,
+} from "@/features/transcription/captionsStore";
+import { isEnglishOnly } from "@/lib/textUtils";
+import { ServerMsg } from "@/server/ws/messages";
 
 interface PageProps {
   params: Promise<{ roomId: string }>;
@@ -14,7 +18,7 @@ interface PageProps {
 
 export default function RoomPage({ params }: PageProps) {
   const { roomId } = use(params);
-  const [status, setStatus] = useState('Initializing...');
+  const [status, setStatus] = useState("Initializing...");
   const [captions, setCaptions] = useState<string[]>([]);
 
   const localVideoRef = useRef<HTMLVideoElement>(null);
@@ -24,7 +28,7 @@ export default function RoomPage({ params }: PageProps) {
   const chunkCountRef = useRef(0);
   const captionsContainerRef = useRef<HTMLDivElement | null>(null);
   const shouldAutoScrollRef = useRef(true);
-  const roleRef = useRef<'initiator' | 'responder' | null>(null);
+  const roleRef = useRef<"initiator" | "responder" | null>(null);
 
   useEffect(() => {
     let signalingClient: ReturnType<typeof createSignalingClient> | null = null;
@@ -35,7 +39,7 @@ export default function RoomPage({ params }: PageProps) {
     const init = async () => {
       try {
         // Get local media stream
-        setStatus('Getting camera and microphone...');
+        setStatus("Getting camera and microphone...");
         localStream = await getLocalStream();
 
         // Attach local stream to video
@@ -45,8 +49,8 @@ export default function RoomPage({ params }: PageProps) {
         }
 
         // Connect to WebSocket signaling server
-        setStatus('Connecting to signaling server...');
-        const wsUrl = process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:3001';
+        setStatus("Connecting to signaling server...");
+        const wsUrl = process.env.NEXT_PUBLIC_WS_URL || "ws://localhost:3001";
 
         signalingClient = createSignalingClient(wsUrl, handleServerMessage);
         await signalingClient.ready();
@@ -54,11 +58,11 @@ export default function RoomPage({ params }: PageProps) {
         // Create peer connection
         peer = createPeer({
           onRemoteStream: (stream) => {
-            console.log('Remote stream received');
+            console.log("Remote stream received");
             if (remoteVideoRef.current) {
               remoteVideoRef.current.srcObject = stream;
             }
-            setStatus('Connected');
+            setStatus("Connected");
           },
           onIceCandidate: (candidate) => {
             if (signalingClient) {
@@ -75,20 +79,20 @@ export default function RoomPage({ params }: PageProps) {
         peer.addLocalStream(localStream);
 
         // Join room
-        setStatus('Joining room...');
-        signalingClient.send({ type: 'join', roomId });
+        setStatus("Joining room...");
+        signalingClient.send({ type: "join", roomId });
 
         // Start creating offer after a delay, but only if we are the initiator.
         setTimeout(async () => {
           // #region agent log
           fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setTimeout',message:'creating and sending offer',data:{},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
           // #endregion
-          if (peer && signalingClient && roleRef.current === 'initiator') {
+          if (peer && signalingClient && roleRef.current === "initiator") {
             try {
               const sdp = await peer.createOffer();
-              signalingClient.send({ type: 'offer', roomId, sdp });
+              signalingClient.send({ type: "offer", roomId, sdp });
             } catch (err) {
-              console.log('Offer creation skipped or failed:', err);
+              console.log("Offer creation skipped or failed:", err);
             }
           }
         }, 800);
@@ -108,16 +112,16 @@ export default function RoomPage({ params }: PageProps) {
             // #region agent log
             fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:onChunk',message:'Sending chunk to transcribe',data:{blobSize:blob.size},timestamp:Date.now(),hypothesisId:'T2'})}).catch(()=>{});
             // #endregion
-            const ext = mimeType.startsWith('audio/mp4')
-              ? 'm4a'
-              : mimeType.startsWith('audio/ogg')
-                ? 'oga'
-                : 'webm';
+            const ext = mimeType.startsWith("audio/mp4")
+              ? "m4a"
+              : mimeType.startsWith("audio/ogg")
+                ? "oga"
+                : "webm";
             const formData = new FormData();
-            formData.append('audio', blob, `audio.${ext}`);
+            formData.append("audio", blob, `audio.${ext}`);
 
-            const response = await fetch('/api/transcribe', {
-              method: 'POST',
+            const response = await fetch("/api/transcribe", {
+              method: "POST",
               body: formData,
             });
 
@@ -134,17 +138,15 @@ export default function RoomPage({ params }: PageProps) {
                 data.text.trim() &&
                 isEnglishOnly(data.text)
               ) {
-                setCaptions((prev) => {
-                  const newCaptions = [...prev, data.text];
-                  return newCaptions.slice(-50); // Keep last 50 lines
-                });
+                const nextLines = appendTranscriptionChunk(data.text);
+                setCaptions(nextLines);
               }
             }
           } catch (err) {
             // #region agent log
             fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:transcribeCatch',message:'Transcription request failed',data:{err:String(err)},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});
             // #endregion
-            console.error('Transcription request failed:', err);
+            console.error("Transcription request failed:", err);
           } finally {
             transcribeInFlightRef.current = false;
             const hasPendingAgain = !!pendingChunkRef.current;
@@ -164,71 +166,73 @@ export default function RoomPage({ params }: PageProps) {
           if (!transcribeInFlightRef.current) processNextChunk();
         });
 
-        setStatus('Waiting for peer...');
+        setStatus("Waiting for peer...");
       } catch (err) {
-        console.error('Initialization error:', err);
+        console.error("Initialization error:", err);
         setStatus(`Error: ${err}`);
       }
     };
 
     const handleServerMessage = async (msg: ServerMsg) => {
-      console.log('Server message:', msg.type);
+      console.log("Server message:", msg.type);
 
       switch (msg.type) {
-        case 'role':
+        case "role":
           roleRef.current = msg.role;
-          setStatus(msg.role === 'initiator' ? 'You are initiator' : 'You are responder');
+          setStatus(
+            msg.role === "initiator" ? "You are initiator" : "You are responder",
+          );
           break;
-        case 'peer-joined':
-          setStatus('Peer joined');
+        case "peer-joined":
+          setStatus("Peer joined");
           break;
 
-        case 'peer-left':
-          setStatus('Peer left');
+        case "peer-left":
+          setStatus("Peer left");
           if (remoteVideoRef.current) {
             remoteVideoRef.current.srcObject = null;
           }
           break;
 
-        case 'room-full':
-          setStatus('Room is full (max 2 peers)');
+        case "room-full":
+          setStatus("Room is full (max 2 peers)");
           break;
 
-        case 'offer':
+        case "offer":
           // #region agent log
           fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:offer',message:'handling offer (becoming answerer)',data:{},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
           // #endregion
           if (peer && signalingClient) {
             try {
               const answerSdp = await peer.acceptOfferCreateAnswer(msg.sdp);
-              signalingClient.send({ type: 'answer', roomId, sdp: answerSdp });
-              setStatus('Connected');
+              signalingClient.send({ type: "answer", roomId, sdp: answerSdp });
+              setStatus("Connected");
             } catch (err) {
-              console.error('Error handling offer:', err);
+              console.error("Error handling offer:", err);
             }
           }
           break;
 
-        case 'answer':
+        case "answer":
           // #region agent log
           fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:answer',message:'handling answer',data:{},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
           // #endregion
           if (peer) {
             try {
               await peer.acceptAnswer(msg.sdp);
-              setStatus('Connected');
+              setStatus("Connected");
             } catch (err) {
-              console.error('Error handling answer:', err);
+              console.error("Error handling answer:", err);
             }
           }
           break;
 
-        case 'ice':
+        case "ice":
           if (peer && msg.candidate) {
             try {
               await peer.addIce(msg.candidate);
             } catch (err) {
-              console.error('Error adding ICE candidate:', err);
+              console.error("Error adding ICE candidate:", err);
             }
           }
           break;
@@ -245,6 +249,7 @@ export default function RoomPage({ params }: PageProps) {
       if (localStream) {
         localStream.getTracks().forEach((track) => track.stop());
       }
+      resetCaptions();
     };
   }, [roomId]);
 
@@ -265,7 +270,7 @@ export default function RoomPage({ params }: PageProps) {
 
     container.scrollTo({
       top: container.scrollHeight,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }, [captions]);
 
@@ -318,11 +323,21 @@ export default function RoomPage({ params }: PageProps) {
             <p className="text-zinc-500 text-sm mt-0">No captions yet...</p>
           ) : (
             <div className="space-y-1.5 leading-relaxed">
-              {captions.map((caption, idx) => (
-                <p key={idx} className="text-zinc-200 m-0">
-                  {caption}
-                </p>
-              ))}
+              {captions.map((caption, idx) => {
+                const isLast = idx === captions.length - 1;
+                return (
+                  <p
+                    key={idx}
+                    className={
+                      isLast
+                        ? "text-zinc-50 m-0 font-medium"
+                        : "text-zinc-200 m-0"
+                    }
+                  >
+                    {caption}
+                  </p>
+                );
+              })}
             </div>
           )}
         </div>
