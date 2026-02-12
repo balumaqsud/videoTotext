@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
     const inputBuffer = Buffer.from(arrayBuffer);
 
     // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:POST',message:'Transcribe received',data:{inputLen:inputBuffer.length},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:POST',message:'Transcribe received',data:{inputLen:inputBuffer.length},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});
     // #endregion
     // Skip very small files (likely silent or corrupted)
     if (inputBuffer.length < 1000) {
@@ -116,12 +116,12 @@ export async function POST(request: NextRequest) {
     const transcription = { text };
 
     // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:success',message:'Transcribe success',data:{textLen:(transcription.text||'').length},timestamp:Date.now(),hypothesisId:'H3'})}).catch(()=>{});
+    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:success',message:'Transcribe success',data:{textLen:(transcription.text||'').length},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});
     // #endregion
     return NextResponse.json({ text: transcription.text || '' });
   } catch (error) {
     // #region agent log
-    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:catch',message:'Transcribe error',data:{detail:error instanceof Error ? error.message : String(error)},timestamp:Date.now(),hypothesisId:'H3'})}).catch(()=>{});
+    fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'api/transcribe/route.ts:catch',message:'Transcribe error',data:{detail:error instanceof Error ? error.message : String(error)},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});
     // #endregion
     console.error('Transcription error:', error);
     const detail = error instanceof Error ? error.message : String(error);

@@ -42,6 +42,9 @@ export function createPeer(config: PeerConfig): Peer {
     createOffer: async () => {
       const offer = await pc.createOffer();
       await pc.setLocalDescription(offer);
+      // #region agent log
+      fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'peer.ts:createOffer',message:'after setLocalDescription(offer)',data:{signalingState:pc.signalingState},timestamp:Date.now(),hypothesisId:'H3'})}).catch(()=>{});
+      // #endregion
       return offer.sdp!;
     },
 
@@ -49,10 +52,16 @@ export function createPeer(config: PeerConfig): Peer {
       await pc.setRemoteDescription({ type: 'offer', sdp });
       const answer = await pc.createAnswer();
       await pc.setLocalDescription(answer);
+      // #region agent log
+      fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'peer.ts:acceptOfferCreateAnswer',message:'after setLocalDescription(answer)',data:{signalingState:pc.signalingState},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
+      // #endregion
       return answer.sdp!;
     },
 
     acceptAnswer: async (sdp: string) => {
+      // #region agent log
+      fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'peer.ts:acceptAnswer',message:'acceptAnswer called',data:{signalingState:pc.signalingState},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
+      // #endregion
       await pc.setRemoteDescription({ type: 'answer', sdp });
     },
 

@@ -18,6 +18,9 @@ export default function RoomPage({ params }: PageProps) {
 
   const localVideoRef = useRef<HTMLVideoElement>(null);
   const remoteVideoRef = useRef<HTMLVideoElement>(null);
+  const transcribeInFlightRef = useRef(false);
+  const pendingChunkRef = useRef<{ blob: Blob; mimeType: string } | null>(null);
+  const chunkCountRef = useRef(0);
 
   useEffect(() => {
     let signalingClient: ReturnType<typeof createSignalingClient> | null = null;
@@ -73,6 +76,9 @@ export default function RoomPage({ params }: PageProps) {
 
         // Start creating offer after a delay (race-friendly MVP approach)
         setTimeout(async () => {
+          // #region agent log
+          fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setTimeout',message:'creating and sending offer',data:{},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
+          // #endregion
           if (peer && signalingClient) {
             try {
               const sdp = await peer.createOffer();
@@ -83,11 +89,20 @@ export default function RoomPage({ params }: PageProps) {
           }
         }, 800);
 
-        // Start microphone chunking for transcription
-        chunker = startMicChunking(localStream, async (blob, mimeType) => {
+        // Start microphone chunking for transcription (one request at a time to avoid overload; queue latest)
+        const processNextChunk = async () => {
+          const next = pendingChunkRef.current;
+          pendingChunkRef.current = null;
+          const inFlightBefore = transcribeInFlightRef.current;
+          // #region agent log
+          fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:processNextChunkStart',message:'processNextChunk start',data:{hasNext:!!next,inFlightBefore},timestamp:Date.now(),hypothesisId:'T2'})}).catch(()=>{});
+          // #endregion
+          if (!next) return;
+          transcribeInFlightRef.current = true;
+          const { blob, mimeType } = next;
           try {
             // #region agent log
-            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:onChunk',message:'Sending chunk to transcribe',data:{blobSize:blob.size},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:onChunk',message:'Sending chunk to transcribe',data:{blobSize:blob.size},timestamp:Date.now(),hypothesisId:'T2'})}).catch(()=>{});
             // #endregion
             const ext = mimeType.startsWith('audio/mp4')
               ? 'm4a'
@@ -103,12 +118,12 @@ export default function RoomPage({ params }: PageProps) {
             });
 
             // #region agent log
-            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:afterFetch',message:'Transcribe response',data:{ok:response.ok,status:response.status},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:afterFetch',message:'Transcribe response',data:{ok:response.ok,status:response.status},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});
             // #endregion
             if (response.ok) {
               const data = await response.json();
               // #region agent log
-              fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setCaptions',message:'API result',data:{hasText:!!(data.text&&data.text.trim()),textLen:data.text?.length??0},timestamp:Date.now(),hypothesisId:'H4'})}).catch(()=>{});
+              fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:setCaptions',message:'API result',data:{hasText:!!(data.text&&data.text.trim()),textLen:data.text?.length??0},timestamp:Date.now(),hypothesisId:'T2'})}).catch(()=>{});
               // #endregion
               if (data.text && data.text.trim()) {
                 setCaptions((prev) => {
@@ -119,10 +134,26 @@ export default function RoomPage({ params }: PageProps) {
             }
           } catch (err) {
             // #region agent log
-            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:transcribeCatch',message:'Transcription request failed',data:{err:String(err)},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:transcribeCatch',message:'Transcription request failed',data:{err:String(err)},timestamp:Date.now(),hypothesisId:'T3'})}).catch(()=>{});
             // #endregion
             console.error('Transcription request failed:', err);
+          } finally {
+            transcribeInFlightRef.current = false;
+            const hasPendingAgain = !!pendingChunkRef.current;
+            // #region agent log
+            fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:processNextChunkFinally',message:'processNextChunk finally',data:{hasPendingAgain},timestamp:Date.now(),hypothesisId:'T2'})}).catch(()=>{});
+            // #endregion
+            if (pendingChunkRef.current) processNextChunk();
           }
+        };
+
+        chunker = startMicChunking(localStream, (blob, mimeType) => {
+          chunkCountRef.current += 1;
+          // #region agent log
+          fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:chunkQueued',message:'chunk queued',data:{chunkIndex:chunkCountRef.current},timestamp:Date.now(),hypothesisId:'T1'})}).catch(()=>{});
+          // #endregion
+          pendingChunkRef.current = { blob, mimeType };
+          if (!transcribeInFlightRef.current) processNextChunk();
         });
 
         setStatus('Waiting for peer...');
@@ -152,6 +183,9 @@ export default function RoomPage({ params }: PageProps) {
           break;
 
         case 'offer':
+          // #region agent log
+          fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:offer',message:'handling offer (becoming answerer)',data:{},timestamp:Date.now(),hypothesisId:'H1'})}).catch(()=>{});
+          // #endregion
           if (peer && signalingClient) {
             try {
               const answerSdp = await peer.acceptOfferCreateAnswer(msg.sdp);
@@ -164,6 +198,9 @@ export default function RoomPage({ params }: PageProps) {
           break;
 
         case 'answer':
+          // #region agent log
+          fetch('http://127.0.0.1:7243/ingest/0718865c-6677-4dac-b4e1-1fa618bb874f',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'room/[roomId]/page.tsx:answer',message:'handling answer',data:{},timestamp:Date.now(),hypothesisId:'H2'})}).catch(()=>{});
+          // #endregion
           if (peer) {
             try {
               await peer.acceptAnswer(msg.sdp);
@@ -241,9 +278,12 @@ export default function RoomPage({ params }: PageProps) {
           border: '1px solid #ccc',
           borderRadius: '4px',
           padding: '1rem',
-          maxHeight: '200px',
+          minHeight: '200px',
+          maxHeight: 'min(480px, 50vh)',
           overflowY: 'auto',
           backgroundColor: '#f9f9f9',
+          width: '100%',
+          boxSizing: 'border-box',
         }}
       >
         <h3 style={{ marginTop: 0, marginBottom: '0.5rem' }}>Live Captions</h3>
