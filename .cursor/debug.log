@@ -493,3 +493,1178 @@
 {"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867696149,"hypothesisId":"T3"}
 {"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770867696150,"hypothesisId":"T2"}
 {"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867696151,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141409,"chunkIndex":16},"timestamp":1770867701541,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":16},"timestamp":1770867701542,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867701542,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141409},"timestamp":1770867701543,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141409},"timestamp":1770867701564,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":13},"timestamp":1770867702518,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867702521,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":13},"timestamp":1770867702522,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867702523,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":140822,"chunkIndex":17},"timestamp":1770867707551,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":17},"timestamp":1770867707552,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867707553,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":140822},"timestamp":1770867707553,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":140822},"timestamp":1770867707575,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770867708439,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867708442,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770867708442,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867708443,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142108,"chunkIndex":18},"timestamp":1770867713559,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142108},"timestamp":1770867713561,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":18},"timestamp":1770867713560,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867713561,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142108},"timestamp":1770867713582,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":12},"timestamp":1770867714603,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867714607,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":12},"timestamp":1770867714608,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867714609,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142702,"chunkIndex":19},"timestamp":1770867719569,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":19},"timestamp":1770867719570,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867719571,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142702},"timestamp":1770867719572,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142702},"timestamp":1770867719591,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":5},"timestamp":1770867720253,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867720258,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":5},"timestamp":1770867720259,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867720259,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141973,"chunkIndex":20},"timestamp":1770867725577,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867725579,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":20},"timestamp":1770867725578,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141973},"timestamp":1770867725580,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141973},"timestamp":1770867725601,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770867726432,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867726436,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770867726438,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867726438,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":140520,"chunkIndex":21},"timestamp":1770867731586,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":21},"timestamp":1770867731587,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867731588,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":140520},"timestamp":1770867731589,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":140520},"timestamp":1770867731609,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":12},"timestamp":1770867732454,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867732458,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":12},"timestamp":1770867732460,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867732460,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":144440,"chunkIndex":22},"timestamp":1770867737597,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":22},"timestamp":1770867737598,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867737598,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":144440},"timestamp":1770867737599,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":144440},"timestamp":1770867737621,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770867738612,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867738617,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770867738618,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867738619,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141326,"chunkIndex":23},"timestamp":1770867743604,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":23},"timestamp":1770867743605,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867743606,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141326},"timestamp":1770867743607,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141326},"timestamp":1770867743627,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770867744222,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867744225,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770867744227,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867744227,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":143181,"chunkIndex":24},"timestamp":1770867749613,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":24},"timestamp":1770867749614,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867749615,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":143181},"timestamp":1770867749616,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":143181},"timestamp":1770867749634,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":4},"timestamp":1770867750488,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867750491,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770867750492,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867750493,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141988,"chunkIndex":25},"timestamp":1770867755623,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141988},"timestamp":1770867755625,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":25},"timestamp":1770867755624,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867755625,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141988},"timestamp":1770867755644,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":76},"timestamp":1770867756618,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867756622,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":76},"timestamp":1770867756623,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867756624,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":138042,"chunkIndex":26},"timestamp":1770867761633,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":26},"timestamp":1770867761635,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867761636,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":138042},"timestamp":1770867761636,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":138042},"timestamp":1770867761658,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":47},"timestamp":1770867762525,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867762530,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":47},"timestamp":1770867762531,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867762532,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":143010,"chunkIndex":27},"timestamp":1770867767643,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":27},"timestamp":1770867767644,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867767644,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":143010},"timestamp":1770867767645,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":143010},"timestamp":1770867767668,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770867768572,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867768577,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770867768578,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867768578,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":140005,"chunkIndex":28},"timestamp":1770867773652,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":28},"timestamp":1770867773654,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867773655,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":140005},"timestamp":1770867773655,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":140005},"timestamp":1770867773676,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770867774610,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867774614,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770867774616,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867774616,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141420,"chunkIndex":29},"timestamp":1770867779660,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":29},"timestamp":1770867779661,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141420},"timestamp":1770867779663,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867779662,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141420},"timestamp":1770867779687,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770867780447,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867780452,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770867780453,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867780454,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:setTimeout","message":"creating and sending offer","data":{},"timestamp":1770867963992,"hypothesisId":"H1"}
+{"location":"room/[roomId]/page.tsx:setTimeout","message":"creating and sending offer","data":{},"timestamp":1770867963995,"hypothesisId":"H1"}
+{"location":"peer.ts:createOffer","message":"after setLocalDescription(offer)","data":{"signalingState":"have-local-offer"},"timestamp":1770867964004,"hypothesisId":"H3"}
+{"location":"peer.ts:createOffer","message":"after setLocalDescription(offer)","data":{"signalingState":"have-local-offer"},"timestamp":1770867964004,"hypothesisId":"H3"}
+{"location":"room/[roomId]/page.tsx:offer","message":"handling offer (becoming answerer)","data":{},"timestamp":1770867964010,"hypothesisId":"H1"}
+{"location":"room/[roomId]/page.tsx:offer","message":"handling offer (becoming answerer)","data":{},"timestamp":1770867964011,"hypothesisId":"H1"}
+{"location":"peer.ts:acceptOfferCreateAnswer","message":"after setLocalDescription(answer)","data":{"signalingState":"stable"},"timestamp":1770867964043,"hypothesisId":"H1"}
+{"location":"peer.ts:acceptOfferCreateAnswer","message":"after setLocalDescription(answer)","data":{"signalingState":"stable"},"timestamp":1770867964044,"hypothesisId":"H1"}
+{"location":"room/[roomId]/page.tsx:answer","message":"handling answer","data":{},"timestamp":1770867964047,"hypothesisId":"H2"}
+{"location":"peer.ts:acceptAnswer","message":"acceptAnswer called","data":{"signalingState":"stable"},"timestamp":1770867964047,"hypothesisId":"H1"}
+{"location":"room/[roomId]/page.tsx:answer","message":"handling answer","data":{},"timestamp":1770867964051,"hypothesisId":"H2"}
+{"location":"peer.ts:acceptAnswer","message":"acceptAnswer called","data":{"signalingState":"stable"},"timestamp":1770867964051,"hypothesisId":"H1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":1},"timestamp":1770867969200,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867969201,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":71564,"chunkIndex":1},"timestamp":1770867969199,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":71564},"timestamp":1770867969202,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":72429,"chunkIndex":1},"timestamp":1770867969203,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":2},"timestamp":1770867969204,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":71564},"timestamp":1770867969391,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":11},"timestamp":1770867970002,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867970015,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":11},"timestamp":1770867970017,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770867970018,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867970018,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":72429},"timestamp":1770867970019,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":72429},"timestamp":1770867970037,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770867970696,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867970702,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770867970703,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867970703,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":50724,"chunkIndex":2},"timestamp":1770867975211,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":3},"timestamp":1770867975212,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867975213,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":50724},"timestamp":1770867975213,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":50704,"chunkIndex":2},"timestamp":1770867975215,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":4},"timestamp":1770867975215,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":50724},"timestamp":1770867975237,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770867976297,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867976304,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770867976305,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770867976306,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867976306,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":50704},"timestamp":1770867976307,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":50704},"timestamp":1770867976324,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":5},"timestamp":1770867977262,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867977268,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":5},"timestamp":1770867977269,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867977270,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":5},"timestamp":1770867981225,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867981226,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":41164,"chunkIndex":3},"timestamp":1770867981224,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":41164},"timestamp":1770867981226,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":6},"timestamp":1770867981228,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":42146,"chunkIndex":3},"timestamp":1770867981228,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":41164},"timestamp":1770867981247,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770867982103,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867982113,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770867982114,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867982116,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770867982116,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":42146},"timestamp":1770867982117,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":42146},"timestamp":1770867982174,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":11},"timestamp":1770867982945,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867982948,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":11},"timestamp":1770867982949,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867982949,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":7},"timestamp":1770867987236,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867987237,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":83996,"chunkIndex":4},"timestamp":1770867987235,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":83996},"timestamp":1770867987237,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":83353,"chunkIndex":4},"timestamp":1770867987239,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":8},"timestamp":1770867987240,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":83996},"timestamp":1770867987267,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":8},"timestamp":1770867988021,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867988024,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":8},"timestamp":1770867988026,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867988027,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770867988027,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":83353},"timestamp":1770867988029,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":83353},"timestamp":1770867988070,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770867989166,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867989170,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770867989171,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867989173,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":140048,"chunkIndex":5},"timestamp":1770867993245,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":9},"timestamp":1770867993247,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":140048},"timestamp":1770867993248,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867993247,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":139920,"chunkIndex":5},"timestamp":1770867993250,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":10},"timestamp":1770867993251,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":140048},"timestamp":1770867993275,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770867994169,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867994173,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770867994174,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770867994175,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867994176,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":139920},"timestamp":1770867994177,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":139920},"timestamp":1770867994198,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770867995170,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770867995176,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770867995177,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770867995178,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141443,"chunkIndex":6},"timestamp":1770867999256,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770867999257,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141443},"timestamp":1770867999258,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":140891,"chunkIndex":6},"timestamp":1770867999259,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":11},"timestamp":1770867999257,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":12},"timestamp":1770867999260,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141443},"timestamp":1770867999283,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868000417,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868000442,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868000442,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868000443,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868000443,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":140891},"timestamp":1770868000444,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":140891},"timestamp":1770868000515,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":4},"timestamp":1770868001165,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868001169,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770868001170,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868001171,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":13},"timestamp":1770868005267,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868005268,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":143031},"timestamp":1770868005269,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142013,"chunkIndex":7},"timestamp":1770868005270,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":14},"timestamp":1770868005271,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":143031,"chunkIndex":7},"timestamp":1770868005266,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":143031},"timestamp":1770868005293,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":5},"timestamp":1770868006195,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868006199,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":5},"timestamp":1770868006200,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868006201,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868006202,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142013},"timestamp":1770868006202,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142013},"timestamp":1770868006224,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":4},"timestamp":1770868006757,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868006761,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770868006762,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868006763,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":15},"timestamp":1770868011278,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868011278,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141758,"chunkIndex":8},"timestamp":1770868011276,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141758},"timestamp":1770868011279,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141469,"chunkIndex":8},"timestamp":1770868011280,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":16},"timestamp":1770868011281,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141758},"timestamp":1770868011300,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868011958,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868011962,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868011963,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868011964,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868011964,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141469},"timestamp":1770868011965,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141469},"timestamp":1770868011987,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":5},"timestamp":1770868012693,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868012698,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":5},"timestamp":1770868012699,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868012700,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142818,"chunkIndex":9},"timestamp":1770868017287,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":17},"timestamp":1770868017288,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868017289,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142818},"timestamp":1770868017289,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142929,"chunkIndex":9},"timestamp":1770868017291,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":18},"timestamp":1770868017292,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142818},"timestamp":1770868017315,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770868018121,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868018126,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770868018127,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868018128,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868018129,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142929},"timestamp":1770868018129,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142929},"timestamp":1770868018146,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":5},"timestamp":1770868018944,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868018948,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":5},"timestamp":1770868018949,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868018950,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142024,"chunkIndex":10},"timestamp":1770868023299,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868023301,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":19},"timestamp":1770868023300,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142024},"timestamp":1770868023302,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142355,"chunkIndex":10},"timestamp":1770868023303,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":20},"timestamp":1770868023304,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142024},"timestamp":1770868023324,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868024250,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868024254,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868024256,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868024257,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868024257,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142355},"timestamp":1770868024258,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142355},"timestamp":1770868024275,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770868025159,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868025164,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770868025165,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868025166,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142664,"chunkIndex":11},"timestamp":1770868029312,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868029314,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142664},"timestamp":1770868029315,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":22},"timestamp":1770868029318,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":21},"timestamp":1770868029313,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":143427,"chunkIndex":11},"timestamp":1770868029317,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142664},"timestamp":1770868029339,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":4},"timestamp":1770868030183,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868030185,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770868030186,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868030187,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868030188,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":143427},"timestamp":1770868030188,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":143427},"timestamp":1770868030202,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770868030807,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868030810,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770868030811,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868030812,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142677,"chunkIndex":12},"timestamp":1770868035326,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":23},"timestamp":1770868035327,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868035328,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142677},"timestamp":1770868035328,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142913,"chunkIndex":12},"timestamp":1770868035330,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":24},"timestamp":1770868035330,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142677},"timestamp":1770868035360,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868036176,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868036178,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868036179,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868036180,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868036181,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142913},"timestamp":1770868036182,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142913},"timestamp":1770868036195,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868037852,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868037857,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868037858,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868037858,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142818,"chunkIndex":13},"timestamp":1770868041335,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":25},"timestamp":1770868041335,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868041336,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":143059,"chunkIndex":13},"timestamp":1770868041337,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142818},"timestamp":1770868041336,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":26},"timestamp":1770868041338,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142818},"timestamp":1770868041355,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":11},"timestamp":1770868042183,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868042189,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":11},"timestamp":1770868042190,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868042191,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868042191,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":143059},"timestamp":1770868042191,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":143059},"timestamp":1770868042206,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":13},"timestamp":1770868042839,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868042842,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":13},"timestamp":1770868042843,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868042844,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":67683,"chunkIndex":14},"timestamp":1770868047345,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868047347,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":27},"timestamp":1770868047346,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":67683},"timestamp":1770868047347,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":66909,"chunkIndex":14},"timestamp":1770868047349,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":28},"timestamp":1770868047349,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":67683},"timestamp":1770868047375,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":8},"timestamp":1770868048183,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868048189,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":8},"timestamp":1770868048190,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868048191,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868048191,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":66909},"timestamp":1770868048192,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":66909},"timestamp":1770868048209,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770868049041,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868049045,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770868049046,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868049047,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":62624,"chunkIndex":15},"timestamp":1770868053357,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":29},"timestamp":1770868053358,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":62624},"timestamp":1770868053358,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868053358,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":62264,"chunkIndex":15},"timestamp":1770868053360,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":30},"timestamp":1770868053360,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":62624},"timestamp":1770868053383,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":15},"timestamp":1770868054565,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868054570,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":15},"timestamp":1770868054572,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":true},"timestamp":1770868054572,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868054573,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":62264},"timestamp":1770868054573,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":62264},"timestamp":1770868054587,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":16},"timestamp":1770868055426,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868055433,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":16},"timestamp":1770868055434,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868055434,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:setTimeout","message":"creating and sending offer","data":{},"timestamp":1770868062580,"hypothesisId":"H1"}
+{"location":"peer.ts:createOffer","message":"after setLocalDescription(offer)","data":{"signalingState":"have-local-offer"},"timestamp":1770868062585,"hypothesisId":"H3"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":1},"timestamp":1770868067787,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":47867,"chunkIndex":1},"timestamp":1770868067786,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868067788,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":47867},"timestamp":1770868067789,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":47867},"timestamp":1770868067812,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868068623,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868068628,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868068630,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868068631,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":55081,"chunkIndex":2},"timestamp":1770868073797,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":2},"timestamp":1770868073799,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868073800,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":55081},"timestamp":1770868073800,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":55081},"timestamp":1770868073835,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868074649,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868074653,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868074654,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868074655,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":51213,"chunkIndex":3},"timestamp":1770868079806,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":3},"timestamp":1770868079807,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868079807,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":51213},"timestamp":1770868079807,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":51213},"timestamp":1770868079827,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770868080721,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868080724,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770868080726,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868080727,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":50163,"chunkIndex":4},"timestamp":1770868085813,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":4},"timestamp":1770868085814,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868085815,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":50163},"timestamp":1770868085816,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":50163},"timestamp":1770868085838,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868086525,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868086529,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868086530,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868086531,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":55457,"chunkIndex":5},"timestamp":1770868091823,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":5},"timestamp":1770868091824,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868091825,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":55457},"timestamp":1770868091825,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":55457},"timestamp":1770868091845,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770868092478,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868092483,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770868092484,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868092484,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":6},"timestamp":1770868097833,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868097834,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":52227,"chunkIndex":6},"timestamp":1770868097832,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":52227},"timestamp":1770868097834,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":52227},"timestamp":1770868097855,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868098942,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868098948,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868098949,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868098950,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":62163,"chunkIndex":7},"timestamp":1770868103838,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":7},"timestamp":1770868103838,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868103839,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":62163},"timestamp":1770868103839,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":62163},"timestamp":1770868103854,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":11},"timestamp":1770868105166,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868105169,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":11},"timestamp":1770868105170,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868105170,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":73868,"chunkIndex":8},"timestamp":1770868109845,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":8},"timestamp":1770868109846,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868109846,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":73868},"timestamp":1770868109847,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":73868},"timestamp":1770868109865,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770868110576,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868110580,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770868110581,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868110582,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":54359,"chunkIndex":9},"timestamp":1770868115853,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":9},"timestamp":1770868115854,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868115855,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":54359},"timestamp":1770868115856,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":54359},"timestamp":1770868115876,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":4},"timestamp":1770868116902,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868116906,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770868116906,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868116907,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":54069,"chunkIndex":10},"timestamp":1770868121861,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":10},"timestamp":1770868121862,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868121862,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":54069},"timestamp":1770868121862,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":54069},"timestamp":1770868121879,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868122784,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868122791,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868122791,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868122792,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":51026,"chunkIndex":11},"timestamp":1770868127868,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":11},"timestamp":1770868127870,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868127870,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":51026},"timestamp":1770868127871,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":51026},"timestamp":1770868127894,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770868128715,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868128719,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770868128720,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868128721,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":55299,"chunkIndex":12},"timestamp":1770868133879,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":12},"timestamp":1770868133879,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868133880,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":55299},"timestamp":1770868133880,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":55299},"timestamp":1770868133899,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":8},"timestamp":1770868134655,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868134661,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":8},"timestamp":1770868134662,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868134662,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":13},"timestamp":1770868139887,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":62255,"chunkIndex":13},"timestamp":1770868139886,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868139888,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":62255},"timestamp":1770868139888,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":62255},"timestamp":1770868139909,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":8},"timestamp":1770868140808,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868140811,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":8},"timestamp":1770868140812,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868140812,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":61933,"chunkIndex":14},"timestamp":1770868145894,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":14},"timestamp":1770868145896,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868145897,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":61933},"timestamp":1770868145897,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":61933},"timestamp":1770868145920,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":11},"timestamp":1770868146943,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868146948,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":11},"timestamp":1770868146948,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868146949,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":57729,"chunkIndex":15},"timestamp":1770868151904,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":57729},"timestamp":1770868151907,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":15},"timestamp":1770868151905,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868151906,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":57729},"timestamp":1770868151928,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":13},"timestamp":1770868152678,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868152685,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":13},"timestamp":1770868152686,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868152687,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":68547,"chunkIndex":16},"timestamp":1770868157912,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":16},"timestamp":1770868157913,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868157914,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":68547},"timestamp":1770868157914,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":68547},"timestamp":1770868157932,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868158619,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868158623,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868158624,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868158625,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":63852,"chunkIndex":17},"timestamp":1770868163919,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":17},"timestamp":1770868163920,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868163921,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":63852},"timestamp":1770868163922,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":63852},"timestamp":1770868163941,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868164658,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868164661,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868164662,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868164663,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":63497,"chunkIndex":18},"timestamp":1770868169926,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":18},"timestamp":1770868169927,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868169928,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":63497},"timestamp":1770868169928,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":63497},"timestamp":1770868169947,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868170527,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868170531,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868170533,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868170533,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868175936,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":70720,"chunkIndex":19},"timestamp":1770868175935,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":19},"timestamp":1770868175936,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":70720},"timestamp":1770868175937,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":70720},"timestamp":1770868175956,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":4},"timestamp":1770868176764,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868176769,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770868176770,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868176771,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":72669},"timestamp":1770868181950,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":72669,"chunkIndex":20},"timestamp":1770868181948,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":20},"timestamp":1770868181949,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868181950,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":72669},"timestamp":1770868182581,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868183469,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868183471,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868183473,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868183480,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":98312,"chunkIndex":21},"timestamp":1770868187954,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":21},"timestamp":1770868187955,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868187955,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":98312},"timestamp":1770868187956,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":98312},"timestamp":1770868187972,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770868188891,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868188899,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770868188900,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868188901,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":95090,"chunkIndex":22},"timestamp":1770868193963,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":22},"timestamp":1770868193964,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868193965,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":95090},"timestamp":1770868193965,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":95090},"timestamp":1770868193985,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868194972,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868194976,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868194978,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868194979,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":23},"timestamp":1770868199974,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868199975,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":68758},"timestamp":1770868199975,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":68758,"chunkIndex":23},"timestamp":1770868199973,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":68758},"timestamp":1770868199995,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770868200668,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868200672,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770868200674,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868200674,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":24},"timestamp":1770868205982,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868205982,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":68187,"chunkIndex":24},"timestamp":1770868205981,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":68187},"timestamp":1770868205983,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":68187},"timestamp":1770868206001,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":8},"timestamp":1770868206849,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868206853,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":8},"timestamp":1770868206855,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868206855,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":63033,"chunkIndex":25},"timestamp":1770868211990,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":25},"timestamp":1770868211992,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868211992,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":63033},"timestamp":1770868211993,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":63033},"timestamp":1770868212018,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868212687,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868212692,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868212693,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868212694,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":65088,"chunkIndex":26},"timestamp":1770868218000,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":26},"timestamp":1770868218001,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868218001,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":65088},"timestamp":1770868218002,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":65088},"timestamp":1770868218022,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868218791,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868218797,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868218798,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868218798,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":75287,"chunkIndex":27},"timestamp":1770868224009,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":27},"timestamp":1770868224009,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868224010,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":75287},"timestamp":1770868224010,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":75287},"timestamp":1770868224029,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":13},"timestamp":1770868224820,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868224827,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":13},"timestamp":1770868224828,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868224829,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":70354,"chunkIndex":28},"timestamp":1770868230017,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":28},"timestamp":1770868230018,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868230019,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":70354},"timestamp":1770868230019,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":70354},"timestamp":1770868230041,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868230807,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868230811,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868230812,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868230813,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":71535,"chunkIndex":29},"timestamp":1770868236026,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":29},"timestamp":1770868236027,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868236028,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":71535},"timestamp":1770868236029,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":71535},"timestamp":1770868236047,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":9},"timestamp":1770868236860,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868236864,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":9},"timestamp":1770868236865,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868236866,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":69446,"chunkIndex":30},"timestamp":1770868242035,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":30},"timestamp":1770868242037,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868242038,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":69446},"timestamp":1770868242039,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":69446},"timestamp":1770868242060,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868242996,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868243002,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868243001,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868243003,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":115251,"chunkIndex":31},"timestamp":1770868248047,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":31},"timestamp":1770868248048,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868248049,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":115251},"timestamp":1770868248050,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":115251},"timestamp":1770868248068,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":12},"timestamp":1770868248765,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868248772,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":12},"timestamp":1770868248773,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868248773,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":91062,"chunkIndex":32},"timestamp":1770868254057,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":32},"timestamp":1770868254061,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868254062,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":91062},"timestamp":1770868254063,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":91062},"timestamp":1770868254219,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868255149,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868255153,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868255154,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868255156,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":123146,"chunkIndex":33},"timestamp":1770868260071,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":33},"timestamp":1770868260072,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868260073,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":123146},"timestamp":1770868260073,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":123146},"timestamp":1770868260091,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868260663,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868260669,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868260670,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868260671,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":139893,"chunkIndex":34},"timestamp":1770868266079,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":34},"timestamp":1770868266080,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868266082,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":139893},"timestamp":1770868266083,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":139893},"timestamp":1770868266377,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868267016,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868267021,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868267023,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868267025,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":142460,"chunkIndex":35},"timestamp":1770868272091,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":35},"timestamp":1770868272092,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868272093,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":142460},"timestamp":1770868272093,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":142460},"timestamp":1770868272123,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868273027,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868273032,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868273033,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868273034,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":139842,"chunkIndex":36},"timestamp":1770868278096,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":36},"timestamp":1770868278097,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868278098,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":139842},"timestamp":1770868278098,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":139842},"timestamp":1770868278119,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868279040,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868279046,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868279047,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868279048,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":139281,"chunkIndex":37},"timestamp":1770868284104,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868284106,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":37},"timestamp":1770868284105,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":139281},"timestamp":1770868284106,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":139281},"timestamp":1770868284126,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868285637,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868285642,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868285643,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868285644,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":141879,"chunkIndex":38},"timestamp":1770868290111,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":38},"timestamp":1770868290111,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868290112,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":141879},"timestamp":1770868290112,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":141879},"timestamp":1770868290143,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868290716,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868290721,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868290722,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868290723,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":93118,"chunkIndex":39},"timestamp":1770868296117,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":39},"timestamp":1770868296118,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868296119,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":93118},"timestamp":1770868296119,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":93118},"timestamp":1770868296138,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868297089,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868297095,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868297096,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868297097,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":66321,"chunkIndex":40},"timestamp":1770868302125,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":40},"timestamp":1770868302126,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868302126,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":66321},"timestamp":1770868302126,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":66321},"timestamp":1770868302144,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868302893,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868302899,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868302900,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868302901,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":70533,"chunkIndex":41},"timestamp":1770868308131,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":41},"timestamp":1770868308132,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868308132,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":70533},"timestamp":1770868308132,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":70533},"timestamp":1770868308150,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868309044,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868309048,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868309049,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868309050,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":70388,"chunkIndex":42},"timestamp":1770868314138,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":42},"timestamp":1770868314140,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868314141,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":70388},"timestamp":1770868314141,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":70388},"timestamp":1770868314162,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868314885,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868314890,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868314891,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868314893,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":74045,"chunkIndex":43},"timestamp":1770868320148,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":43},"timestamp":1770868320149,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868320149,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":74045},"timestamp":1770868320150,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":74045},"timestamp":1770868320167,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770868321081,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868321086,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770868321087,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868321088,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":101488,"chunkIndex":44},"timestamp":1770868326156,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":44},"timestamp":1770868326157,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868326158,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":101488},"timestamp":1770868326158,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":101488},"timestamp":1770868326176,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868326978,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868326982,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868326983,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868326983,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":99671,"chunkIndex":45},"timestamp":1770868332165,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":45},"timestamp":1770868332166,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868332167,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":99671},"timestamp":1770868332168,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":99671},"timestamp":1770868332186,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868332909,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868332913,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868332914,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868332914,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":102792,"chunkIndex":46},"timestamp":1770868338175,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":46},"timestamp":1770868338176,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868338176,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":102792},"timestamp":1770868338177,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":102792},"timestamp":1770868338197,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":19},"timestamp":1770868339010,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868339014,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":19},"timestamp":1770868339014,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868339015,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":55904,"chunkIndex":47},"timestamp":1770868344183,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":47},"timestamp":1770868344184,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868344184,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":55904},"timestamp":1770868344185,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":55904},"timestamp":1770868344205,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":7},"timestamp":1770868344940,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868344944,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":7},"timestamp":1770868344945,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868344946,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":58670,"chunkIndex":48},"timestamp":1770868350192,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":48},"timestamp":1770868350193,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868350193,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":58670},"timestamp":1770868350194,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":58670},"timestamp":1770868350213,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":14},"timestamp":1770868351056,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868351061,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":14},"timestamp":1770868351062,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868351063,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":64355,"chunkIndex":49},"timestamp":1770868356201,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":49},"timestamp":1770868356203,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868356204,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":64355},"timestamp":1770868356204,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":64355},"timestamp":1770868356225,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":2},"timestamp":1770868356877,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868356883,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":2},"timestamp":1770868356885,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868356886,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":73108,"chunkIndex":50},"timestamp":1770868362212,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":50},"timestamp":1770868362213,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868362213,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":73108},"timestamp":1770868362214,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":73108},"timestamp":1770868362234,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868363423,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868363429,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868363427,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868363429,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":65065,"chunkIndex":51},"timestamp":1770868368221,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":51},"timestamp":1770868368222,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868368223,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":65065},"timestamp":1770868368224,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":65065},"timestamp":1770868368243,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868368815,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868368822,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868368824,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868368825,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":91693,"chunkIndex":52},"timestamp":1770868374232,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":52},"timestamp":1770868374233,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868374233,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":91693},"timestamp":1770868374234,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":91693},"timestamp":1770868374253,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":17},"timestamp":1770868374924,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868374930,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":17},"timestamp":1770868374931,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868374932,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":68306,"chunkIndex":53},"timestamp":1770868380241,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":53},"timestamp":1770868380242,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868380243,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":68306},"timestamp":1770868380244,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":68306},"timestamp":1770868380264,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868380840,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868380845,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868380846,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868380847,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":57647,"chunkIndex":54},"timestamp":1770868386251,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":54},"timestamp":1770868386252,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868386253,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":57647},"timestamp":1770868386254,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":57647},"timestamp":1770868386273,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":16},"timestamp":1770868387394,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868387398,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":16},"timestamp":1770868387399,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868387400,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":67119,"chunkIndex":55},"timestamp":1770868392261,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":55},"timestamp":1770868392262,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868392263,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":67119},"timestamp":1770868392264,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":67119},"timestamp":1770868392281,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":13},"timestamp":1770868393934,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868393939,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":13},"timestamp":1770868393941,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868393942,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":67357,"chunkIndex":56},"timestamp":1770868398270,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":56},"timestamp":1770868398272,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868398272,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":67357},"timestamp":1770868398273,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":67357},"timestamp":1770868398294,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868399324,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868399328,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868399330,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868399331,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":70404,"chunkIndex":57},"timestamp":1770868404278,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":57},"timestamp":1770868404279,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868404280,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":70404},"timestamp":1770868404280,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":70404},"timestamp":1770868404296,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868405166,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868405173,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868405174,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868405174,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":75200,"chunkIndex":58},"timestamp":1770868410287,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":58},"timestamp":1770868410287,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868410288,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":75200},"timestamp":1770868410289,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":75200},"timestamp":1770868410307,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":5},"timestamp":1770868411110,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868411118,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":5},"timestamp":1770868411119,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868411120,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":59},"timestamp":1770868416293,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":71228,"chunkIndex":59},"timestamp":1770868416293,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868416294,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":71228},"timestamp":1770868416294,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":71228},"timestamp":1770868416310,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868417190,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868417195,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868417196,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868417197,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":60},"timestamp":1770868422300,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":71644,"chunkIndex":60},"timestamp":1770868422299,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868422302,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":71644},"timestamp":1770868422302,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":71644},"timestamp":1770868422320,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":5},"timestamp":1770868422946,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868422951,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":5},"timestamp":1770868422953,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868422956,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":71843,"chunkIndex":61},"timestamp":1770868428309,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":61},"timestamp":1770868428310,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868428311,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":71843},"timestamp":1770868428312,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":71843},"timestamp":1770868428335,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868429493,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868429497,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868429498,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868429499,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":72699,"chunkIndex":62},"timestamp":1770868434320,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":62},"timestamp":1770868434321,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868434322,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":72699},"timestamp":1770868434322,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":72699},"timestamp":1770868434401,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868435225,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868435230,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868435231,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868435233,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":67435,"chunkIndex":63},"timestamp":1770868440329,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":63},"timestamp":1770868440330,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868440331,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":67435},"timestamp":1770868440332,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":67435},"timestamp":1770868440352,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868441033,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868441037,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868441039,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868441040,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868446341,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":64884,"chunkIndex":64},"timestamp":1770868446340,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":64},"timestamp":1770868446340,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":64884},"timestamp":1770868446342,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":64884},"timestamp":1770868446368,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868447162,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868447167,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868447168,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868447169,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":69030,"chunkIndex":65},"timestamp":1770868452348,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":65},"timestamp":1770868452349,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868452349,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":69030},"timestamp":1770868452350,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":69030},"timestamp":1770868452367,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868453383,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868453389,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868453390,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868453391,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":72761,"chunkIndex":66},"timestamp":1770868458357,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":72761},"timestamp":1770868458360,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":66},"timestamp":1770868458358,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868458359,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":72761},"timestamp":1770868458381,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868459169,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868459176,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868459177,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868459178,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":67},"timestamp":1770868464366,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868464367,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":65336},"timestamp":1770868464367,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":65336,"chunkIndex":67},"timestamp":1770868464365,"hypothesisId":"T1"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":65336},"timestamp":1770868464384,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":4},"timestamp":1770868465145,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868465150,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":4},"timestamp":1770868465152,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868465152,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":65074,"chunkIndex":68},"timestamp":1770868470374,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":68},"timestamp":1770868470376,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868470376,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":65074},"timestamp":1770868470377,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":65074},"timestamp":1770868470409,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":10},"timestamp":1770868471544,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868471550,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":10},"timestamp":1770868471551,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868471552,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":100292,"chunkIndex":69},"timestamp":1770868476388,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":69},"timestamp":1770868476389,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868476390,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":100292},"timestamp":1770868476391,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":100292},"timestamp":1770868476418,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":8},"timestamp":1770868477296,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868477299,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":8},"timestamp":1770868477300,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868477301,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":70},"timestamp":1770868482400,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868482400,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":69937,"chunkIndex":70},"timestamp":1770868482399,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":69937},"timestamp":1770868482401,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":69937},"timestamp":1770868482424,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868483122,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868483126,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868483127,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868483128,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":47677,"chunkIndex":71},"timestamp":1770868488409,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":71},"timestamp":1770868488411,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":47677},"timestamp":1770868488413,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868488412,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":47677},"timestamp":1770868488434,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":6},"timestamp":1770868489172,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868489176,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":6},"timestamp":1770868489177,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868489178,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":135109,"chunkIndex":72},"timestamp":1770868494419,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":72},"timestamp":1770868494420,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868494420,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":135109},"timestamp":1770868494421,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":135109},"timestamp":1770868494440,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868495522,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868495527,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868495528,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868495529,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":116709,"chunkIndex":73},"timestamp":1770868500428,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":73},"timestamp":1770868500429,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868500430,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":116709},"timestamp":1770868500430,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":116709},"timestamp":1770868500450,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":14},"timestamp":1770868503816,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868503819,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":14},"timestamp":1770868503820,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868503821,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":96983,"chunkIndex":74},"timestamp":1770868506435,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":74},"timestamp":1770868506436,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868506437,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":96983},"timestamp":1770868506437,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":96983},"timestamp":1770868506459,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":15},"timestamp":1770868507267,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868507275,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":15},"timestamp":1770868507277,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868507277,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":66509,"chunkIndex":75},"timestamp":1770868512445,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":75},"timestamp":1770868512446,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868512447,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":66509},"timestamp":1770868512448,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":66509},"timestamp":1770868512469,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":2},"timestamp":1770868513146,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868513148,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":2},"timestamp":1770868513149,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868513150,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":62515,"chunkIndex":76},"timestamp":1770868518455,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868518456,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":76},"timestamp":1770868518456,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":62515},"timestamp":1770868518457,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":62515},"timestamp":1770868518475,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":19},"timestamp":1770868520303,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868520307,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":19},"timestamp":1770868520309,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868520309,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":62893,"chunkIndex":77},"timestamp":1770868524463,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":77},"timestamp":1770868524464,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868524464,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":62893},"timestamp":1770868524464,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":62893},"timestamp":1770868524481,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868525194,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868525200,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868525201,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868525201,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":56598,"chunkIndex":78},"timestamp":1770868530471,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":78},"timestamp":1770868530472,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868530473,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":56598},"timestamp":1770868530474,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":56598},"timestamp":1770868530494,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":3},"timestamp":1770868531325,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868531331,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":3},"timestamp":1770868531332,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868531332,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":69302,"chunkIndex":79},"timestamp":1770868536482,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":79},"timestamp":1770868536484,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868536486,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":69302},"timestamp":1770868536486,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":69302},"timestamp":1770868536518,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868537344,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868537348,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868537349,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868537350,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":97358,"chunkIndex":80},"timestamp":1770868542493,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":97358},"timestamp":1770868542496,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":80},"timestamp":1770868542494,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868542495,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":97358},"timestamp":1770868542518,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":24},"timestamp":1770868543234,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868543237,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":24},"timestamp":1770868543238,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868543239,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":133175,"chunkIndex":81},"timestamp":1770868548502,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868548504,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":81},"timestamp":1770868548503,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":133175},"timestamp":1770868548505,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":133175},"timestamp":1770868548521,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":11},"timestamp":1770868550524,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868550529,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":11},"timestamp":1770868550530,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868550531,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":82},"timestamp":1770868554512,"hypothesisId":"T1"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":103949,"chunkIndex":82},"timestamp":1770868554511,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868554513,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":103949},"timestamp":1770868554514,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":103949},"timestamp":1770868554530,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":27},"timestamp":1770868555484,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868555486,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":27},"timestamp":1770868555487,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868555488,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":145451,"chunkIndex":83},"timestamp":1770868560521,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":83},"timestamp":1770868560522,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868560523,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":145451},"timestamp":1770868560524,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":145451},"timestamp":1770868560542,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":14},"timestamp":1770868561264,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868561270,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":14},"timestamp":1770868561271,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868561272,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":111706,"chunkIndex":84},"timestamp":1770868566531,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":84},"timestamp":1770868566532,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868566533,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":111706},"timestamp":1770868566533,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":111706},"timestamp":1770868566555,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":12},"timestamp":1770868567553,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868567556,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":12},"timestamp":1770868567558,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868567558,"hypothesisId":"T2"}
+{"location":"micChunker.ts:ondataavailable","message":"MediaRecorder ondataavailable","data":{"size":130331,"chunkIndex":85},"timestamp":1770868572541,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:chunkQueued","message":"chunk queued","data":{"chunkIndex":85},"timestamp":1770868572542,"hypothesisId":"T1"}
+{"location":"room/[roomId]/page.tsx:onChunk","message":"Sending chunk to transcribe","data":{"blobSize":130331},"timestamp":1770868572544,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:processNextChunkStart","message":"processNextChunk start","data":{"hasNext":true,"inFlightBefore":false},"timestamp":1770868572543,"hypothesisId":"T2"}
+{"location":"api/transcribe/route.ts:POST","message":"Transcribe received","data":{"inputLen":130331},"timestamp":1770868572564,"hypothesisId":"T3"}
+{"location":"api/transcribe/route.ts:success","message":"Transcribe success","data":{"textLen":1},"timestamp":1770868573515,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:setCaptions","message":"API result","data":{"hasText":true,"textLen":1},"timestamp":1770868573520,"hypothesisId":"T2"}
+{"location":"room/[roomId]/page.tsx:afterFetch","message":"Transcribe response","data":{"ok":true,"status":200},"timestamp":1770868573518,"hypothesisId":"T3"}
+{"location":"room/[roomId]/page.tsx:processNextChunkFinally","message":"processNextChunk finally","data":{"hasPendingAgain":false},"timestamp":1770868573520,"hypothesisId":"T2"}

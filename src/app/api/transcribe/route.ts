@@ -96,6 +96,7 @@ export async function POST(request: NextRequest) {
       const directResult = await openai.audio.transcriptions.create({
         file: directFile,
         model: 'gpt-4o-transcribe',
+        language: 'en',
       });
       text = directResult.text || '';
     } catch {
@@ -106,6 +107,7 @@ export async function POST(request: NextRequest) {
         const wavResult = await openai.audio.transcriptions.create({
           file: wavFile,
           model: 'gpt-4o-transcribe',
+          language: 'en',
         });
         text = wavResult.text || '';
       } catch {
