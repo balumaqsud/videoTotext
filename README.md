@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Video Call App
 
-## Getting Started
+A minimal but production-structured Next.js video call application with WebRTC, WebSocket signaling, and live transcription.
 
-First, run the development server:
+## Features
 
+- 2-person video calls via room URLs (`/room/[roomId]`)
+- WebRTC peer-to-peer video/audio
+- WebSocket signaling server (separate process)
+- Live transcription using OpenAI Whisper API
+- No authentication or database required
+
+## Setup
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Configure environment variables:
+Update `.env.local` with your OpenAI API key:
+```
+NEXT_PUBLIC_WS_URL=ws://localhost:3004
+OPENAI_API_KEY=your_actual_openai_key_here
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the Application
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You need to run **two processes** in separate terminals:
 
-## Learn More
+### Terminal A: Next.js Dev Server
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Terminal B: WebSocket Signaling Server
+```bash
+npm run dev:ws
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Open your browser to `http://localhost:3000`
+2. Enter a room ID (e.g., "abc") and click "Join Room"
+3. Open a second browser window/tab (or different browser)
+4. Enter the same room ID and join
+5. Both peers should now see each other's video and receive live captions
 
-## Deploy on Vercel
+## Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── api/transcribe/     # OpenAI transcription endpoint
+│   ├── room/[roomId]/      # Video call room page
+│   └── page.tsx            # Home page
+├── features/
+│   ├── signaling/          # WebSocket client wrapper
+│   ├── transcription/      # Microphone chunking
+│   └── webrtc/             # WebRTC peer & media utilities
+├── lib/
+│   └── env.ts              # Environment variable handling
+└── server/
+    └── ws/                 # WebSocket signaling server
+        ├── index.ts        # Server entry point
+        ├── messages.ts     # Zod schemas & types
+        └── rooms.ts        # In-memory room registry
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Technical Stack
+
+- **Next.js 14+** with App Router
+- **TypeScript** for type safety
+- **WebRTC** for peer-to-peer video/audio
+- **WebSocket** for signaling
+- **Zod** for runtime validation
+- **OpenAI Whisper API** for transcription
